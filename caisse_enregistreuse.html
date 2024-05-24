@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caisse enregistreuse - French Systems</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Caisse enregistreuse">
+            <div class="card-body">
+                <h5 class="card-title">Caisse enregistreuse</h5>
+                <p class="card-text">La caisse enregistreuse est un équipement essentiel pour toute entreprise de vente au détail ou de service.</p>
+                <a href="index.php?page=caisse_enregistreuse" class="btn btn-primary">Plus d'informations</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var btnMoreInfo = document.querySelector('.btn-primary');
+            btnMoreInfo.addEventListener('click', function() {
+                // Rediriger vers la page avec plus d'informations sur la caisse enregistreuse
+                window.location.href = 'index.php?page=caisse_enregistreuse';
+            });
+        });
+    </script>
+</body>
+</html>
