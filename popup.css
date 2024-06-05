@@ -1,0 +1,112 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0; /* Réduction de la hauteur */
+  background-color: #f7f7f7; /* Couleur de fond de la navbar */
+  color: #333; /* Couleur du texte */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  margin-top: 60px; /* Ajustez selon la nouvelle hauteur de la navbar */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #333; /* Changement de couleur */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Couleur du texte au survol */
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  height: 850px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 3.3rem;
+  box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+}
+
+.inner-box {
+  position: absolute;
+  width: calc(100% - 4.1rem);
+  height: calc(100% - 4.1rem);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 27px;
+  margin-right: 0.3rem;
+}
+
+.logo h4 {
+  font-size: 1.1rem;
+  margin-top: -9px;
+  letter-spacing: -0.5px;
+  color: #151111;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content {
+  padding: 20px;
+}
+
+.popup-left {
+  float: left;
+  width: 40%;
+}
+
+.popup-right {
+  float: right;
+  width: 60%;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
