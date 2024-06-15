@@ -10,8 +10,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.image-300 {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
 .container {
-  margin-top: 60px; /* Ajustez selon la nouvelle hauteur de la navbar */
+  margin-top: 105px; /* Ajustez selon la nouvelle hauteur de la navbar */
 }
 
 .navbar-nav {
@@ -77,29 +83,35 @@
   position: fixed;
   z-index: 1001;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  max-width: 600px;
-  height: auto;
-  overflow: auto;
+  bottom: 1%; /* Ajustez la distance par rapport au bas de la fenêtre */
+  transform: translateX(-50%);
+  width: auto; /* Ajustez selon le contenu */
+  max-width: 85%; /* Largeur maximale */
+  height: auto; /* Hauteur maximale */
+  max-height: 90%; /* Hauteur maximale */
+  overflow: auto; /* Activer le défilement si nécessaire */
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-.popup-content {
-  padding: 20px;
+.popup-open {
+  overflow: hidden;
 }
 
-.popup-left {
-  float: left;
-  width: 40%;
+.popup .box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.popup-right {
-  float: right;
-  width: 60%;
+.popup-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
 }
 
 .close {
@@ -109,4 +121,177 @@
   position: absolute;
   top: 10px;
   right: 10px;
+  cursor: pointer;
 }
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #333;
+
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.card-buttons .btn {
+  flex-grow: 1;
+}
+
+.btn-primary {
+  flex-grow: 1;
+  margin: 0 5px;
+}
+
+/* CSS pour la section Contact */
+
+#contact {
+  padding: 50px 0;
+}
+
+#contact .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #333;
+}
+
+#contact .section-content {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: #666;
+}
+
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-info h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #666;
+}
+
+.google-info {
+  margin-top: 20px;
+}
+
+.google-info iframe {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form .form-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.contact-form .btn-primary {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.contact-form .btn-primary:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Styles pour les icônes */
+
+.contact-info p i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.contact-info p i:hover {
+  transform: scale(1.2);
+}
+

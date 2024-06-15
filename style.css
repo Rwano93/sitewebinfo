@@ -153,7 +153,7 @@ main {
     background-color: #5a6268;
 }
 
-/* Styles pour les cartes de matériel */
+
 .card {
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -180,3 +180,79 @@ main {
     margin-bottom: 20px;
 }
 
+/* CSS pour la section Contact */
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.google-info {
+    margin-top: 20px;
+}
+
+.google-info iframe {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.form-text {
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    font-size: 18px;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+}
+
+/* Ajout d'un style pour les boutons de contact dans la navbar */
+.navbar-text .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 18px;
+}
+
+.navbar-text .btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
